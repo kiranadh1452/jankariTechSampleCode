@@ -37,7 +37,7 @@ class Account{
 
     if(amount > this.depositLimit){
       // beyond transactional limit
-      alert('No sucess in doing so');
+      alert('Amount is beyond the deposit limit.');
       return false;
     }
 
@@ -67,6 +67,7 @@ class Account{
 
     if((this.minBalanceRequired > remBalance) || (amount > this.transactionLimit)){
       // deduction isn't possible
+      alert('You don\'t have sufficient balance to do so.');
       return false;
     }
 
