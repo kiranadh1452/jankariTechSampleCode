@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      /* border: solid 1px black; */
+      margin: 20px;
+      padding: 5px;
+      line-height: 30px;
+    }
+    #container-1, #container-2{
+      float: left;
+      width: 40%;
+      border: solid 1px rgb(80, 79, 79);
+      box-shadow: 1px 1px 10px 10px rgb(151, 149, 149);
+    }
+    button{
+      display: block;
+      margin: 10px 20px;
+      width: 400px;
+      text-align: left;
+    }
+    .clearfix::after{
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="accounts-container" class="clearfix">
+    <div id="container-1">
+      
+    </div>
+
+    <div id="container-2">
+      
+    </div>
+  </div>
+  <script type="module" src="src/index.js"></script>
+
+  <button id="step1">Step 1 : Deposit Rs. 1000 on Sujal's Account</button>
+  <button id="step2">Step 2 : Transfer 300 from Sujal's account to Rashi's acc.</button>
+  <button id="step3">Step 3 : Withdraw 200 from Rashi's acc.</button>
+  <button id="step4">Step 4 : Display Bank Statement of Rashi's acc (alert box).</button>
+  <button id="step5">Step 5 : Display Sujal's balance (alert box)</button>
+
+</body>
+
+</html>
